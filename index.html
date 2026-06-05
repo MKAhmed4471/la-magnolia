@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Magnolia — Quality Delivered to Your Doorstep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="promo-bar">
+        FREE SHIPPING OFFER! FREE DELIVERY ALL OVER BANGLADESH ON ORDERS OVER 1500 BDT
+    </div>
+
+    <header>
+        <div class="logo-area">
+            <a href="#" class="logo-title">La Magnolia</a>
+            <span class="logo-tagline">Quality Delivered to Your Doorstep.</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="cart-icon-wrapper" id="cart-trigger">
+                <span>Bag</span>
+                <span class="cart-count" id="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-badge">New Collection 2026</span>
+            <h1>Aesthetic Products, <br>Delivered to Your Doorstep.</h1>
+            <p>At La Magnolia, we believe in premium quality. Elevate your lifestyle, fashion, and daily essentials with our curated collections, delivered safely without any hassle.</p>
+            <a href="#shop" class="cta-btn">Shop Now ➔</a>
+        </div>
+        <div class="hero-art-box" style="background-color: #EAD6D2;">
+            <img src="Marketplace.jpeg" alt="Marketplace" class="hero-blob-img">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>100% Premium Quality</h3>
+            <p>Every product is strictly checked for maximum quality assurance.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Home Delivery</h3>
+            <p>Your ordered items will be safely delivered right to your home.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Cash on Delivery</h3>
+            <p>Enjoy the secure opportunity to pay after receiving your package.</p>
+        </div>
+    </section>
+
+    <section class="products-section" id="shop">
+        <div class="section-header">
+            <h2>Our Trending Products</h2>
+            <p>Explore our best collections to make your lifestyle more attractive</p>
+        </div>
+        <div class="product-grid">
+    <div class="product-card">
+        <span class="product-badge">New</span>
+        <div class="product-img-placeholder">
+            <img src="Marketplace.jpeg" alt="Perfume" class="product-img">
+        </div>
+        <div class="product-info">
+            <span class="product-category">Lifestyle / Perfume</span>
+            <h3 class="product-title">Magnolia Signature Perfume (100ml)</h3>
+            <div class="product-price-row">
+                <span class="product-price">BDT 1250</span>
+                <button class="add-to-cart-btn" onclick="addToCart('Magnolia Signature Perfume', 1250)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <span class="product-badge">Best Seller</span>
+        <div class="product-img-placeholder">
+            <img src="bag.jpeg" alt="Leather Bag" class="product-img">
+        </div>
+        <div class="product-info">
+            <span class="product-category">Fashion / Bag</span>
+            <h3 class="product-title">Premium Leather Women's Tote Bag</h3>
+            <div class="product-price-row">
+                <span class="product-price">BDT 1850</span>
+                <button class="add-to-cart-btn" onclick="addToCart('Premium Leather Tote Bag', 1850)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-img-placeholder">
+            <img src="watch.jpeg" alt="Watch" class="product-img">
+        </div>
+        <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-title">Minimalist Rose Gold Analog Watch</h3>
+            <div class="product-price-row">
+                <span class="product-price">BDT 1500</span>
+                <button class="add-to-cart-btn" onclick="addToCart('Minimalist Rose Gold Watch', 1500)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Shopping Bag</h2>
+            <button class="close-cart" id="close-cart-btn">✕</button>
+        </div>
+        <div class="cart-items-list" id="cart-items-container">
+            <p style="text-align: center; color: var(--text-muted); margin-top: 30px;" id="empty-cart-message">Your shopping bag is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Subtotal:</span>
+                <span id="cart-total-amount">BDT 0</span>
+            </div>
+            <button class="checkout-btn" onclick="checkoutAlert()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/8801521478636" class="whatsapp-float" target="_blank">
+        WhatsApp
+    </a>
+
+    <footer>
+        <p>&copy; 2026 La Magnolia. All Rights Reserved.</p>
+        <p style="font-size: 11px; margin-top: 5px; opacity: 0.6;">Quality Delivered to Your Doorstep.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
